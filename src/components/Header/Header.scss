@@ -1,0 +1,18 @@
+.header {
+  display: flex;
+  justify-content: space-around;
+
+  &__usd {
+    background-color: rgb(30, 155, 30);
+    padding: 5px 30px;
+    border-radius: 10px;
+    color: aliceblue;
+  }
+
+  &__eur {
+    background-color: rgb(209, 151, 26);
+    padding: 5px 30px;
+    border-radius: 10px;
+    color: aliceblue;
+  }
+}
