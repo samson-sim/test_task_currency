@@ -140,7 +140,7 @@ export const Exchanger: React.FC<Props> = ({ eur, usd }) => {
         value={value1}
         onChange={({ target }) => {
           setSelectedInput(1);
-          setValue2(target.value);
+          setValue1(target.value);
           exchanger();
         }}
         placeholder="0"
