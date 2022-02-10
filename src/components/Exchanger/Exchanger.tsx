@@ -138,9 +138,9 @@ export const Exchanger: React.FC<Props> = ({ eur, usd }) => {
       <input
         className="exchange__input"
         value={value1}
-        onChange={async ({ target }) => {
+        onChange={({ target }) => {
           setSelectedInput(1);
-          setValue1(target.value);
+          setValue2(target.value);
           exchanger();
         }}
         placeholder="0"
@@ -156,7 +156,12 @@ export const Exchanger: React.FC<Props> = ({ eur, usd }) => {
         }}
         placeholder="0"
       />
-      <select className="exchange__select" onChange={({ target }) => setCurrencySale(target.value)}>
+      <select
+        className="exchange__select"
+        onChange={({ target }) => {
+          setCurrencySale(target.value);
+        }}
+      >
         <option value="UAN">UAN</option>
         <option value="USD">USD</option>
         <option value="EUR">EUR</option>
